@@ -27,9 +27,6 @@ jobs:
           mongodb-version: 4.2
           mongodb-port: 8052
 
-
-      - name: Build, test and package project
-
       - name: Docker login
         run: docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_PASSWORD}}
 
