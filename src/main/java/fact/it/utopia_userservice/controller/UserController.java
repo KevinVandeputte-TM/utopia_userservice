@@ -48,6 +48,11 @@ public class UserController {
         return userRepo.findByUserID(userID);
     }
 
+    @GetMapping("/highscores")
+    public List<User> getHighscores(){
+        return userRepo.findFirst10ByOrderByScoreDesc();
+    }
+
     /*Create new User*/
     @PostMapping("/user")
     public User create(@RequestBody UserDTO user){
