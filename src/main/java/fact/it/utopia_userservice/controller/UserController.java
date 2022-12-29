@@ -43,6 +43,7 @@ public class UserController {
     public List<User> getAllUsers(){
         return userRepo.findAll();
     }
+
     @GetMapping("/users/{userID}")
     public User getUserById(@PathVariable int userID){
         return userRepo.findByUserID(userID);
