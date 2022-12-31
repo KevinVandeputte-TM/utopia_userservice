@@ -12,7 +12,7 @@ public class User {
     private String id;
     private int userID;
     private String name;
-    private String interest;
+    private int interestID;
     private int birthyear;
     private int score;
     private List<Integer> stationsVisited;
@@ -21,10 +21,10 @@ public class User {
     public User() {
     }
 
-    public User(int userID, String name, String interest, int birthyear, int score) {
+    public User(int userID, String name, int interestID, int birthyear, int score) {
         this.userID = userID;
         this.name = name;
-        this.interest = interest;
+        this.interestID = interestID;
         this.birthyear = birthyear;
         this.score = score;
     }
@@ -54,12 +54,12 @@ public class User {
         this.name = name;
     }
 
-    public String getInterest() {
-        return interest;
+    public int getInterestID() {
+        return interestID;
     }
 
-    public void setInterest(String interest) {
-        this.interest = interest;
+    public void setInterestID(int interestID) {
+        this.interestID = interestID;
     }
 
     public int getBirthyear() {
