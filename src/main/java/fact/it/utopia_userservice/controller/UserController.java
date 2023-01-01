@@ -58,7 +58,7 @@ public class UserController {
     /*Create new User*/
     @PostMapping("/user")
     public User create(@RequestBody UserDTO user){
-        User peristentUser = new User(user.getUserID(), user.getName(),Integer.parseInt(user.getInterest()),user.getBirthyear(),user.getScore());
+        User peristentUser = new User(user.getUserID(), user.getName(),user.getInterestID(),user.getBirthyear(),user.getScore());
         userRepo.save(peristentUser);
         return peristentUser;
     }

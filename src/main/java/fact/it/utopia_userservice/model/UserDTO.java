@@ -6,7 +6,7 @@ public class UserDTO {
 
     private int userID;
     private String name;
-    private String interest;
+    private int interestID;
     private int birthyear;
     private int score;
     private List<Integer> stationsVisited;
@@ -15,9 +15,9 @@ public class UserDTO {
     public UserDTO() {
     }
 
-    public UserDTO(String name, String interest, int birthyear) {
+    public UserDTO(String name, int interestID, int birthyear) {
         this.name = name;
-        this.interest = interest;
+        this.interestID = interestID;
         this.birthyear = birthyear;
     }
 
@@ -38,12 +38,12 @@ public class UserDTO {
         this.name = name;
     }
 
-    public String getInterest() {
-        return interest;
+    public int getInterestID() {
+        return interestID;
     }
 
-    public void setInterest(String interest) {
-        this.interest = interest;
+    public void setInterestID(int interestID) {
+        this.interestID = interestID;
     }
 
     public int getBirthyear() {
